@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Style Spy</h1>
+  <p class="sub">Grab this page's colours and fonts, save them as a kit.</p>
+  <button id="analyseBtn" class="primary">Analyse this page</button>
+  <div id="status" class="status"></div>
+
+  <h2>Colours <span class="hint">— click to copy</span></h2>
+  <div id="colours" class="empty">Not analysed yet.</div>
+
+  <h2>Fonts <span class="hint">— click to copy</span></h2>
+  <div id="fonts" class="empty">Not analysed yet.</div>
+
+  <h2>Save as a kit</h2>
+  <div class="row">
+    <input id="kitName" type="text" placeholder="Kit name, e.g. My blog palette">
+    <button id="saveBtn">Save kit</button>
+  </div>
+  <div class="row">
+    <button id="copyCssBtn">Copy as CSS</button>
+    <button id="exportCssBtn">Export .css file</button>
+  </div>
+
+  <h2>Saved kits</h2>
+  <div id="kits" class="empty">No saved kits yet.</div>
+
+  <script src="lib/style.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
